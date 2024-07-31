@@ -16,11 +16,11 @@ from wand.color import Color
 # Timer settings
 filename = "timer_python.gif"
 bg_color = "white"
-seconds = 1 * 60
+seconds = 1 * 300
 
 # Generate time labels
 def nice_time(seconds):
-    m, s = divmod(seconds, 60)
+    m, s = divmod(seconds, 300)
     # m can be subdivided to hours if needed:
     # h, m = divmod(m, 60)
     return("{0:02d}:{1:02d}".format(m, s))
